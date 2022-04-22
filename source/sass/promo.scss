@@ -1,5 +1,5 @@
 .promo {
-  background-image: url('../img/promo-background-mobile.jpg');
+  background-image: url("../img/promo-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   padding-top: 27px;
@@ -7,7 +7,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 320px;
     height: 302px;
     background-color: rgba(104, 183, 56, 0.85);
@@ -17,7 +17,7 @@
 }
 
 .promo__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -29,7 +29,7 @@
 }
 
 .promo__text {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;

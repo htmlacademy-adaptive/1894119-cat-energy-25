@@ -3,7 +3,7 @@
 }
 
 .bonus__wrapper {
-  background-image: url('../img/bonus-image-mobile.jpg');
+  background-image: url("../img/bonus-image-mobile.jpg");
   background-repeat: no-repeat;
   width: 280px;
   height: 290px;
@@ -12,8 +12,8 @@
   flex-direction: column;
   align-items: center;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     width: 280px;
     height: 290px;
