@@ -1,0 +1,61 @@
+.example {
+  background-color: #EAEAEA;
+  padding: 25px 20px 40px 20px;
+}
+
+.example__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.example__list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__term {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__definition {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  color: #444444;
+}
+
+.example__note {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.example__image {
+  margin-bottom: 15px;
+}
+
+.example__form label {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

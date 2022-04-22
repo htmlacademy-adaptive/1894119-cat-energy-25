@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+@use "page-body.scss";
+@use "main-nav.scss";
+@use "page-main.scss";
+@use "promo.scss";
+@use "button.scss";
+@use "rations.scss";
+@use "visually-hidden.scss";
+@use "special.scss";
+@use "example.scss";
+@use "contacts.scss";
+@use "page-footer.scss";
+@use "socials.scss";
+@use "copyright.scss";
+@use "product-cards.scss";
+@use "product.scss";
+@use "show-all.scss";
+@use "additional-goods.scss";
+@use "good.scss";
+@use "bonus.scss";
+@use "form.scss";
+@use "cat-name.scss";
+@use "filter.scss";
+@use "contacts-details.scss";
+@use "comment.scss";
+@use "additionally.scss";
+@use "form__note.scss";
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: medium;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}

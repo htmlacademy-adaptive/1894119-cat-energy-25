@@ -1,0 +1,27 @@
+.cat-name {
+  padding-top: 39px;
+  padding-bottom: 24px;
+}
+
+.cat-name__list {
+  padding: 0;
+  margin: 0;
+}
+
+.cat-name__item {
+  list-style-type: none;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.cat-name__label {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
