@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+@import "page-body.scss";
+@import "main-nav.scss";
+@import "page-main.scss";
+@import "promo.scss";
+@import "button.scss";
+@import "rations.scss";
+@import "visually-hidden.scss";
+@import "special.scss";
+@import "example.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "socials.scss";
+@import "copyright.scss";
+@import "product-cards.scss";
+@import "product.scss";
+@import "show-all.scss";
+@import "additional-goods.scss";
+@import "good.scss";
+@import "bonus.scss";
+@import "form.scss";
+@import "cat-name.scss";
+@import "filter.scss";
+@import "contacts-details.scss";
+@import "comment.scss";
+@import "additionally.scss";
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: medium;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}

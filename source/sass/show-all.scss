@@ -1,0 +1,31 @@
+.show-all {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-all__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.show-all__text {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 21px;
+  color: #444444;
+}
+
+.show-all__button {
+  color: #444444;
+  background-color: #f2f2f2;
+  padding: 10px 94px;
+}

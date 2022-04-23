@@ -1,0 +1,21 @@
+.main-nav {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #000000;
+}

@@ -1,0 +1,32 @@
+.form {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 32px;
+}
+
+.form__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form__group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__button {
+  width: 280px;
+  padding: 7px 44px;
+  margin-bottom: 21px;
+}
+
+.form__note p {
+  margin: 0;
+  line-height: 16px;
+  text-align: center;
+}

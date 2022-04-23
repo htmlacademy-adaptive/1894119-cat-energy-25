@@ -1,0 +1,34 @@
+.bonus {
+  padding: 35px 20px;
+}
+
+.bonus__wrapper {
+  background-image: url("../img/bonus-image-mobile.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 290px;
+    top: 0;
+    left: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}
+
+.bonus__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 186px;
+}
