@@ -1,0 +1,23 @@
+.page-body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-body {
+    width: $tablet-width;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    width: $desktop-width;
+  }
+}
