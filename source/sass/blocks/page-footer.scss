@@ -1,5 +1,9 @@
 .page-footer {
   background-color: #f2f2f2;
+  width: 100%;
+}
+
+.page-footer__wrapper {
   padding: 39px 20px 22px 20px;
   display: flex;
   flex-direction: column;
@@ -19,10 +23,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    padding: 58px 30px 55px 30px;
+  .page-footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 58px 30px 55px 30px;
   }
 
   .page-footer__logo {
@@ -39,7 +43,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__wrapper {
     padding: 63px 110px 62px 110px;
   }
 }

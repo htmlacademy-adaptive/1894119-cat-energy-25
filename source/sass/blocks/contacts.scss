@@ -1,6 +1,7 @@
 .contacts__wrapper {
   padding: 26px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__wrapper--background {
@@ -8,7 +9,7 @@
 }
 
 .contacts__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -21,13 +22,17 @@
   line-height: 20px;
   margin: 0;
   color: #444444;
+  text-align: right;
+}
+
+.contacts__map {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     padding: 65px 70px 56px 70px;
-    display: grid;
-    grid-template-columns: 172px 160px;
+    grid-template-columns: 172px 1fr;
     column-gap: 296px;
   }
 
@@ -46,7 +51,6 @@
   }
 
   .contacts__map {
-    width: 100%;
     height: 400px;
   }
 }
@@ -59,6 +63,7 @@
   .contacts__wrapper {
     padding-left: 80px;
     padding-right: 80px;
+    grid-template-columns: 163px 155px;
     column-gap: 87px;
     background-color: #ffffff;
     position: absolute;

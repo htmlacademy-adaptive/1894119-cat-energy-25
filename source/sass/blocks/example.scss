@@ -4,7 +4,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -43,7 +43,7 @@
 }
 
 .example__term {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -58,7 +58,7 @@
 }
 
 .example__note {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -74,6 +74,8 @@
 }
 
 .example__image {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 
@@ -82,7 +84,7 @@
 }
 
 .example__form label {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -119,7 +121,9 @@
   .example__container {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: auto;
+    margin: 0 auto;
     margin-bottom: 72px;
+    width: $tablet-width - 60px;
   }
 
   .example__term {
@@ -148,8 +152,6 @@
   .example__image {
     width: 592px;
     height: 511px;
-    display: block;
-    margin: 0 auto;
     margin-bottom: 29px;
     position: relative;
     z-index: 1;
@@ -209,6 +211,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     row-gap: 55px;
+    width: auto;
   }
 
   .example__item {

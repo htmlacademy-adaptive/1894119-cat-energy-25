@@ -1,5 +1,5 @@
 .main-nav {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldMedium", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -36,6 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    font-family: "OswaldRegular", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
