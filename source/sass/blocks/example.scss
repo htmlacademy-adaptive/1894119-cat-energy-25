@@ -1,0 +1,249 @@
+.example {
+  background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
+}
+
+.example__title {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.example__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  &:last-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.example__term {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 7px;
+}
+
+.example__definition {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  color: #444444;
+}
+
+.example__note {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 2/3;
+
+  br {
+    display: none;
+  }
+}
+
+.example__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.example__form {
+  text-align: center;
+}
+
+.example__form label {
+  font-family: "OswaldRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: none;
+    padding: 43px 30px 62px 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 462px;
+      background-color: #eaeaea;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  .example__text {
+    margin-bottom: 54px;
+  }
+
+  .example__container {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    width: $tablet-width - 60px;
+  }
+
+  .example__term {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__definition {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__note {
+    font-size: 20px;
+    line-height: 25px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: end;
+
+    span {
+      display: block;
+    }
+  }
+
+  .example__image {
+    width: 592px;
+    height: 511px;
+    margin-bottom: 29px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .example__form {
+    position: relative;
+    z-index: 1;
+  }
+
+  .example__form label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .example__range {
+    width: 426px;
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    grid-template-rows: 176px auto auto auto;
+    column-gap: 194px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    &::after {
+      z-index: -1;
+    }
+  }
+
+  .example__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 0;
+    padding-top: 43px;
+    padding-bottom: 76px;
+  }
+
+  .example__text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+  }
+
+  .example__container {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 55px;
+    width: auto;
+  }
+
+  .example__item {
+    &:first-of-type {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &:last-of-type {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+
+  .example__note {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+
+    span {
+      display: inline;
+      margin-left: 63px;
+    }
+  }
+
+  .example__image {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  .example__form {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}

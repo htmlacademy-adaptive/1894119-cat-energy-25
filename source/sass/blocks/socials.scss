@@ -1,0 +1,28 @@
+.socials {
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.socials__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socials__item {
+  list-style-type: none;
+  margin-right: 26px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    border: none;
+  }
+}
