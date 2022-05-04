@@ -1,0 +1,9 @@
+@media (min-width: $desktop-width) {
+  .cat-data {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: grid;
+    grid-template-columns: 1fr 570px;
+    column-gap: 80px;
+  }
+}
