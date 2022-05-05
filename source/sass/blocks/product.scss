@@ -1,21 +1,129 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 36px;
+}
+
+.product__image {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin-top: auto;
+  margin-left: auto;
+}
+
 .product__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  margin-bottom: 14px;
   text-transform: uppercase;
   color: #222222;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 76px;
 }
 
 .product__table {
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.product__cell {
+  padding: 0;
+}
+
+.product__cell--right-column {
+  text-align: right;
 }
 
 .product__button {
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 109px;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 22px;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: relative;
+  }
+
+  .product__image {
+    position: absolute;
+  }
+
+  .product__image--small-size {
+    top: -45px;
+    left: 82px;
+
+    img {
+      width: 162px;
+      height: 172px;
+    }
+  }
+
+  .product__image--big-size {
+    top: -73px;
+    left: 78px;
+
+    img {
+      width: 168px;
+      height: 200px;
+    }
+  }
+
+  .product__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 21px;
+    width: 60%;
+    text-align: center;
+  }
+
+  .product__table {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 33px;
+    width: 100%;
+  }
+
+  .product__cell {
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 7px;
+    padding-bottom: 9px;
+  }
+
+  .product__button {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__image--small-size {
+    top: -52px;
+    left: 43px;
+  }
+
+  .product__image--big-size {
+    top: -80px;
+    left: 39px;
+
+    img {
+      width: 172px;
+      height: 196px;
+    }
+  }
 }

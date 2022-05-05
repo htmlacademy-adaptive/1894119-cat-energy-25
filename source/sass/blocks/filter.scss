@@ -1,6 +1,10 @@
 .filter {
   padding-top: 22px;
   padding-bottom: 19px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .filter__list {
@@ -10,10 +14,42 @@
 
 .filter__item {
   list-style-type: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "OswaldRegular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  margin-bottom: 13px;
+
+  :last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .filter {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 70px;
+    padding-right: 67px;
+    border: none;
+  }
+
+  .filter__list {
+    padding: 25px 28px 25px 28px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .filter__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    padding: 0;
+  }
 }
