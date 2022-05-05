@@ -42,9 +42,11 @@
 }
 
 .rations__text {
+  padding-bottom: 23px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 19px;
   color: #444444;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .rations__link {
@@ -55,6 +57,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  svg {
+    margin-left: 16px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -98,6 +104,8 @@
   }
 
   .rations__text {
+    padding-bottom: 0;
+    border: none;
     margin-bottom: 52px;
     width: 340px;
   }
@@ -105,6 +113,10 @@
   .rations__link {
     font-size: 20px;
     line-height: 30px;
+
+    svg {
+      margin-left: 25px;
+    }
   }
 }
 
@@ -148,5 +160,9 @@
   .rations__text {
     margin-bottom: 27px;
     width: 100%;
+  }
+
+  .rations__link svg {
+    margin-left: 27px;
   }
 }

@@ -1,6 +1,17 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  display: block;
+  text-decoration: none;
+  margin-right: 57px;
+}
+
 @media (min-width: $tablet-width) {
   .logo__link {
-    display: block;
+    margin: 0;
   }
 
   .logo__image {
@@ -12,7 +23,6 @@
 
 @media (min-width: $desktop-width) {
   .logo__image {
-    display: block;
     width: 202px;
     height: 59px;
   }
