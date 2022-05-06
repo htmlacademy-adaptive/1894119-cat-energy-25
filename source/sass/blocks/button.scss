@@ -6,3 +6,11 @@
   border: none;
   text-transform: uppercase;
 }
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
