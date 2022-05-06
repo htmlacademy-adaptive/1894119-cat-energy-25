@@ -141,6 +141,7 @@
   padding-top: 22px;
   padding-bottom: 24px;
   border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   width: 100%;
   text-align: center;
 }
@@ -148,6 +149,14 @@
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
 }
 
 @media (max-width: 767px) {
@@ -169,7 +178,7 @@
   .main-nav--nojs .main-nav__list {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: static;
   }
 }
 @media (min-width: 768px) {
@@ -458,6 +467,14 @@
   text-transform: uppercase;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .rations {
   padding: 20px;
 }
@@ -516,9 +533,33 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.rations__link svg {
+.rations__link::before, .rations__link::after {
+  display: block;
+  content: "";
+  transition: all 0.2s ease-out;
+}
+.rations__link::before {
+  order: 1;
   margin-left: 16px;
+  width: 18px;
+  height: 3px;
+  background-color: #000000;
+}
+.rations__link::after {
+  order: 2;
+  border: 5.5px solid transparent;
+  border-left-color: #000000;
+}
+.rations__link:hover::before {
+  width: 26px;
+}
+.rations__link:active {
+  opacity: 0.3;
+  transition: none;
 }
 
 @media (min-width: 768px) {
@@ -571,7 +612,7 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .rations__link svg {
+  .rations__link::before {
     margin-left: 25px;
   }
 }
@@ -617,7 +658,7 @@
     width: 100%;
   }
 
-  .rations__link svg {
+  .rations__link::before {
     margin-left: 27px;
   }
 }
@@ -1034,6 +1075,10 @@
 .contacts__map {
   display: block;
   width: 100%;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 362px;
 }
 
 @media (min-width: 768px) {
@@ -1059,6 +1104,8 @@
 
   .contacts__map {
     height: 400px;
+    background-image: url("../img/map-tablet.jpg");
+    background-size: 768px 400px;
   }
 }
 @media (min-width: 1440px) {
@@ -1075,6 +1122,11 @@
     position: absolute;
     top: 95px;
     left: 110px;
+  }
+
+  .contacts__map {
+    background-image: url("../img/map-desktop.jpg");
+    background-size: 1440px 400px;
   }
 }
 .page-footer {
@@ -1381,6 +1433,14 @@
   background-color: #f2f2f2;
   padding: 10px 0;
   width: 100%;
+}
+
+.show-all__button:hover {
+  background-color: #ebebeb;
+}
+
+.show-all__button:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -2097,6 +2157,14 @@
   display: block;
   text-decoration: none;
   margin-right: 57px;
+}
+
+.logo__link:hover {
+  opacity: 0.8;
+}
+
+.logo__link:active {
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
