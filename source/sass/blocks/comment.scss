@@ -1,7 +1,21 @@
 .comment {
+  margin-bottom: 23px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    top: 14px;
+    z-index: -1;
+  }
+}
+
+.comment__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 23px;
 }
 
 .comment__title {
@@ -10,26 +24,50 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 38px;
+  background-color: #ffffff;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 22px;
+  margin-left: -20px;
 }
 
 .comment__input {
   width: 100%;
-  padding: 0;
-  min-height: 150px;
+  min-height: 130px;
   resize: none;
+  border: 1px solid #e7e7e7;
+  padding: 9px 12px 9px 15px;
+  font-family: "OswaldRegular", sans-serif;
+}
+
+.comment__input::placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }
 
 @media (min-width: $tablet-width) {
   .comment {
+    margin-bottom: 65px;
+
+    &::before {
+      top: 20px;
+    }
+  }
+
+  .comment__wrapper {
     padding-left: 70px;
     padding-right: 67px;
-    margin-bottom: 65px;
   }
 
   .comment__title {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    padding-left: 39px;
+    padding-right: 38px;
+    margin-left: -39px;
   }
 
   .comment__input {
@@ -39,8 +77,17 @@
 
 @media (min-width: $desktop-width) {
   .comment {
+    margin-bottom: 67px;
+  }
+
+  .comment__wrapper {
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 67px;
+  }
+
+  .comment__title {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
   }
 }
