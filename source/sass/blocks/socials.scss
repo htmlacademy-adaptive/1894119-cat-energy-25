@@ -21,6 +21,18 @@
   }
 }
 
+.socials__link svg {
+  fill: #666666;
+}
+
+.socials__link:hover svg {
+  fill: #68b738;
+}
+
+.socials__link:active svg {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .socials {
     border: none;

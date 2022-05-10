@@ -100,21 +100,6 @@
   text-transform: uppercase;
 }
 
-// .example__range {
-//   margin: 0 13px;
-//   width: 86px;
-// }
-
-// .example__range::-webkit-slider-runnable-track {
-//   height: 6px;
-//   background-color: #68b738;
-//   border-radius: 6px;
-// }
-
-// .example__range::-webkit-slider-thumb {
-//   display: none;
-// }
-
 @media (min-width: $tablet-width) {
   .example {
     background: none;
@@ -205,6 +190,11 @@
   .example__form label {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  }
+
+  .example__form label:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
 
   .example__range {

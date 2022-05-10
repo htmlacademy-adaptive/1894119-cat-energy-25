@@ -12,6 +12,14 @@
 
 .page-footer__logo {
   padding-bottom: 32px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__socials {
@@ -20,6 +28,14 @@
 
 .page-footer__copyright {
   padding-top: 22px;
+
+  &:hover .copyright__logo {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

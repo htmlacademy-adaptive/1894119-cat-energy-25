@@ -1,0 +1,37 @@
+.checkbox__label {
+  display: flex;
+  align-items: center;
+
+  &:hover .checkbox__mark {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__mark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 16px;
+  position: relative;
+}
+
+.checkbox__input:checked + .checkbox__mark::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 8px;
+  height: 16px;
+  border-right: 2px solid #68b738;
+  border-bottom: 2px solid #68b738;
+  transform: rotate(45deg);
+}

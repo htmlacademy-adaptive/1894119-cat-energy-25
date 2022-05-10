@@ -25,6 +25,12 @@
   }
 }
 
+.bonus__icon {
+  z-index: 1;
+  margin-top: 59px;
+  margin-bottom: 48px;
+}
+
 .bonus__text {
   font-size: 16px;
   line-height: 20px;
@@ -32,7 +38,6 @@
   position: relative;
   color: #ffffff;
   text-align: center;
-  margin-top: 186px;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,6 +57,13 @@
       width: 707px;
       height: 200px;
     }
+  }
+
+  .bonus__icon {
+    position: absolute;
+    margin-left: 77px;
+    width: 80px;
+    height: 83px;
   }
 
   .bonus__text {
@@ -77,6 +89,12 @@
       width: 245px;
       height: 288px;
     }
+  }
+
+  .bonus__icon {
+    position: absolute;
+    margin-left: 84px;
+    margin-top: 56px;
   }
 
   .bonus__text {
