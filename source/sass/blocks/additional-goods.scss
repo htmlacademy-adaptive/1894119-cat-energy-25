@@ -9,8 +9,8 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 36px;
+  padding-top: 24px;
+  padding-bottom: 34px;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -22,7 +22,7 @@
 .additional-goods__item {
   list-style-type: none;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -37,7 +37,7 @@
     width: 100%;
     height: 2px;
     background-color: #68b738;
-    top: 92px;
+    top: 90px;
     z-index: -1;
   }
 
@@ -56,14 +56,14 @@
   }
 
   .additional-goods__item {
-    padding: 26px 38px 28px 38px;
+    padding: 24px 38px 28px 38px;
     border: 1px solid #cdcdcd;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-goods::before {
-    top: 100px;
+    top: 98px;
   }
 
   .additional-goods__wrapper {
@@ -82,6 +82,7 @@
     padding: 75px 35px 81px 40px;
     grid-column: 1/3;
     grid-row: 1/2;
+    margin-left: -40px;
   }
 
   .additional-goods__item {
@@ -89,8 +90,8 @@
     border-right: none;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    padding-top: 23px;
+    padding-bottom: 16px;
   }
 
   .additional-goods__list {

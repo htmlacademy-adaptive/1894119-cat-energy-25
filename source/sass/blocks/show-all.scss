@@ -35,7 +35,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: #111111;
 }
@@ -57,6 +57,8 @@
   background-color: #f2f2f2;
   padding: 10px 0;
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .show-all__button:hover {
@@ -70,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .show-all {
-    padding: 161px 38px 38px 38px;
+    padding: 160px 38px 38px 38px;
     border: 1px solid #f2f2f2;
   }
 
@@ -85,6 +87,7 @@
     line-height: 22px;
     margin-bottom: 23px;
     text-align: center;
+    padding: 0 50px;
   }
 
   .show-all__text {
@@ -102,5 +105,9 @@
 @media (min-width: $desktop-width) {
   .show-all {
     padding: 160px 38px 41px 38px;
+  }
+
+  .show-all__title {
+    padding: 0;
   }
 }

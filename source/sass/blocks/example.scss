@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 43px 20px;
 }
 
 .example__title {
@@ -16,14 +16,14 @@
   margin: 0;
   margin-bottom: 20px;
   color: #444444;
-  padding-right: 10px;
 }
 
 .example__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr auto;
-  row-gap: 20px;
+  row-gap: 9px;
+  column-gap: 30px;
   margin-bottom: 40px;
 }
 
@@ -52,7 +52,7 @@
   border: 1px solid #cdcdcd;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 }
 
 .example__definition {
@@ -76,16 +76,12 @@
   text-align: center;
   grid-column: 1/3;
   grid-row: 2/3;
-
-  br {
-    display: none;
-  }
 }
 
 .example__image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .example__form {
@@ -103,7 +99,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background: none;
-    padding: 43px 30px 62px 30px;
+    padding: 43px 30px 60px 30px;
     position: relative;
 
     &::after {
@@ -124,7 +120,8 @@
   }
 
   .example__text {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
+    padding-right: 10px;
   }
 
   .example__container {
@@ -139,8 +136,8 @@
   .example__term {
     font-size: 30px;
     line-height: 37px;
-    width: 162px;
-    padding-bottom: 20px;
+    width: 160px;
+    padding-bottom: 18px;
   }
 
   .example__definition {
@@ -164,13 +161,15 @@
 
   .example__note {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 20px;
     grid-column: 3/4;
     grid-row: 1/2;
     text-align: end;
+    margin-top: 10px;
 
     span {
       display: block;
+      margin-top: 9px;
     }
   }
 
@@ -212,9 +211,12 @@
     column-gap: 194px;
     padding-left: 110px;
     padding-right: 110px;
+    padding-top: 0;
+    padding-bottom: 75px;
 
     &::after {
       z-index: -1;
+      height: 461px;
     }
   }
 
@@ -229,8 +231,9 @@
   .example__text {
     grid-column: 1/2;
     grid-row: 2/3;
-    padding-top: 70px;
+    padding-top: 74px;
     padding-bottom: 70px;
+    padding-right: 0;
     margin-bottom: 0;
   }
 
@@ -240,8 +243,8 @@
     margin: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
-    row-gap: 55px;
-    width: auto;
+    row-gap: 45px;
+    width: fit-content;
   }
 
   .example__item {
@@ -263,7 +266,8 @@
   .example__note {
     grid-column: 1/3;
     grid-row: 2/3;
-    text-align: center;
+    text-align: left;
+    margin-top: 0;
 
     span {
       display: inline;

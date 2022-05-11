@@ -11,13 +11,13 @@
 }
 
 .page-main__title--catalog {
-  padding: 27px 20px 41px 20px;
+  padding: 25px 20px 41px 20px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .page-main__title--form {
-  padding: 27px 20px 37px 20px;
+  padding: 26px 20px 37px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,21 +27,21 @@
   }
 
   .page-main__title--catalog {
-    padding: 65px 30px 163px 30px;
+    padding: 50px 30px 163px 30px;
     border: none;
   }
 
   .page-main__title--form {
-    padding: 65px 69px 54px 69px;
+    padding: 50px 69px 54px 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title--catalog {
-    padding: 78px 110px 165px 110px;
+    padding: 46px 110px 165px 110px;
   }
 
   .page-main__title--form {
-    padding: 77px 110px 56px 110px;
+    padding: 45px 110px 55px 110px;
   }
 }

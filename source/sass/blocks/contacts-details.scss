@@ -1,5 +1,5 @@
 .contacts-details {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   position: relative;
 }
 
@@ -9,7 +9,7 @@
   height: 2px;
   width: 100%;
   background-color: #68b738;
-  top: 44px;
+  top: 41px;
   z-index: -1;
 }
 
@@ -24,10 +24,10 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-top: 26px;
   padding-left: 20px;
-  padding-right: 14px;
+  padding-right: 20px;
   background-color: #ffffff;
   width: fit-content;
 }
@@ -45,7 +45,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -57,12 +57,12 @@
 }
 
 .contacts-details__label {
-  margin-right: 8px;
+  margin-right: 11px;
 }
 
 .contacts-details__input {
   border: 1px solid #e7e7e7;
-  padding: 13px 15px 15px 15px;
+  padding: 12px 15px 13px 15px;
   font-family: "OswaldRegular", sans-serif;
 
   &:hover {
@@ -112,7 +112,7 @@
   }
 
   .contacts-details::before {
-    top: 99px;
+    top: 98px;
   }
 
   .contacts-details__wrapper {
@@ -124,8 +124,8 @@
     font-size: 36px;
     line-height: 36px;
     padding-top: 75px;
-    padding-left: 39px;
-    padding-right: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 76px;
     margin-left: 30px;
 
@@ -141,11 +141,23 @@
   }
 
   .contacts-details__label {
-    margin-right: 14px;
+    margin-right: 17px;
+    margin-top: -3px;
   }
 
   .contacts-details__input {
-    padding: 10px 21px;
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .contacts-details__item:first-of-type .contacts-details__input {
+    padding-left: 22px;
+  }
+
+  .contacts-details__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -155,7 +167,7 @@
   }
 
   .contacts-details::before {
-    top: 93px;
+    top: 90px;
   }
 
   .contacts-details__wrapper {
@@ -173,7 +185,7 @@
   .contacts-details__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 84px;
+    column-gap: 78px;
     row-gap: 50px;
   }
 
@@ -182,6 +194,16 @@
   }
 
   .contacts-details__label {
-    margin-right: 16px;
+    margin-right: 17px;
+  }
+
+  .contacts-details__icon--email {
+    right: 18px;
+    top: 17px;
+  }
+
+  .contacts-details__icon--phone {
+    right: 15px;
+    top: 13px;
   }
 }
