@@ -1,7 +1,7 @@
 .special {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 48px;
 }
 
 .special__title {
@@ -32,6 +32,7 @@
 
   p {
     margin: 0;
+    margin-top: 2px;
   }
 }
 
@@ -64,8 +65,8 @@
   .special__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 182px;
-    row-gap: 134px;
+    column-gap: 60px;
+    row-gap: 132px;
   }
 
   .special__item {
@@ -76,6 +77,8 @@
 
     p {
       z-index: 1;
+      margin-top: 1px;
+      max-width: 245px;
     }
   }
 

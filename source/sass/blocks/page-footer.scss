@@ -11,7 +11,7 @@
 }
 
 .page-footer__logo {
-  padding-bottom: 32px;
+  padding-bottom: 26px;
 
   &:hover {
     opacity: 0.8;
@@ -23,11 +23,12 @@
 }
 
 .page-footer__socials {
-  padding: 20px 0;
+  padding-top: 19px;
+  padding-bottom: 16px;
 }
 
 .page-footer__copyright {
-  padding-top: 22px;
+  padding-top: 21px;
 
   &:hover .copyright__logo {
     fill: #68b738;
@@ -42,7 +43,7 @@
   .page-footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 58px 30px 55px 30px;
+    padding: 60px 30px 55px 30px;
   }
 
   .page-footer__logo {
@@ -60,6 +61,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 63px 110px 62px 110px;
+    padding: 61px 110px 62px 110px;
   }
 }

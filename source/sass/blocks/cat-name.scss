@@ -11,7 +11,7 @@
 
 .cat-name__item {
   list-style-type: none;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -28,12 +28,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  margin-right: 12px;
+  margin-right: 14px;
 }
 
 .cat-name__input {
   border: 1px solid #e7e7e7;
-  padding: 13px 15px 14px 15px;
+  padding: 13px 15px 12px 15px;
   font-family: "OswaldRegular", sans-serif;
 
   &:hover {
@@ -64,16 +64,22 @@
   }
 
   .cat-name__item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .cat-name__label {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 18px;
   }
 
   .cat-name__input {
-    padding: 11px 19px 12px 19px;
+    padding: 17px 19px 12px 17px;
+  }
+
+  .cat-name__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

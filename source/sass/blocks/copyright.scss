@@ -22,6 +22,16 @@
   }
 
   .copyright__logo {
-    margin-left: 22px;
+    margin-left: 24px;
+  }
+
+  .copyright__text {
+    margin-top: -2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    margin-top: -4px;
   }
 }

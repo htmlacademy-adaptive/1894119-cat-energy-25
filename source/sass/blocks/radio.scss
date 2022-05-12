@@ -21,7 +21,7 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
-  margin-right: 16px;
+  margin-right: 15px;
   position: relative;
 }
 
@@ -35,4 +35,20 @@
   background-color: #68b738;
   top: 9px;
   left: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio__mark {
+    width: 38px;
+    height: 39px;
+    margin-right: 20px;
+  }
+
+  .radio__input:checked + .radio__mark::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    top: 11px;
+    left: 10px;
+  }
 }

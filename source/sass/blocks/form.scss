@@ -21,8 +21,10 @@
 }
 
 .form__button {
+  font-size: 16px;
+  line-height: 20px;
   width: 100%;
-  padding: 7px 44px;
+  padding: 9px 44px;
   margin-bottom: 21px;
 }
 
@@ -61,13 +63,18 @@
 
     p {
       font-size: 16px;
+      margin-top: -3px;
     }
   }
 
   .form__button {
     margin-bottom: 0;
-    margin-right: 61px;
+    margin-right: 63px;
     width: 282px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 15px;
   }
 }
 
@@ -84,6 +91,10 @@
   .form__note {
     padding-left: 110px;
     padding-right: 110px;
+
+    p {
+      margin: 0;
+    }
   }
 
   .form__button {

@@ -1,5 +1,5 @@
 .comment {
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   position: relative;
 
   &::before {
@@ -33,11 +33,12 @@
 
 .comment__input {
   width: 100%;
-  min-height: 130px;
+  min-height: 150px;
   resize: none;
   border: 1px solid #e7e7e7;
-  padding: 9px 12px 9px 15px;
+  padding: 8px 13px 8px 13px;
   font-family: "OswaldRegular", sans-serif;
+  box-sizing: border-box;
 }
 
 .comment__input::placeholder {
@@ -49,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-bottom: 65px;
+    margin-bottom: 58px;
 
     &::before {
       top: 20px;
@@ -72,12 +73,18 @@
 
   .comment__input {
     min-height: 174px;
+    padding: 10px 18px 10px 18px;
+  }
+
+  .comment__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
-    margin-bottom: 67px;
+    margin-bottom: 60px;
   }
 
   .comment__wrapper {
@@ -89,5 +96,9 @@
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -40px;
+  }
+
+  .comment__input {
+    padding-top: 8px;
   }
 }
