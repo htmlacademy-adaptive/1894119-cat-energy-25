@@ -67,7 +67,7 @@
 
 .main-nav--closed .main-nav__toggle {
   display: block;
-  background-image: url("../img/icons/open-menu.svg");
+  background-image: url("../img/open-menu.svg");
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -86,7 +86,7 @@
 
 .main-nav--opened .main-nav__toggle {
   display: block;
-  background-image: url("../img/icons/close-menu.svg");
+  background-image: url("../img/close-menu.svg");
 
   @media (min-width: $tablet-width) {
     display: none;

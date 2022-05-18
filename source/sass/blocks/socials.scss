@@ -21,12 +21,8 @@
   }
 }
 
-.socials__link svg {
-  fill: #666666;
-}
-
 .socials__link:hover svg {
-  fill: #68b738;
+  stroke: #68b738;
 }
 
 .socials__link:active svg {
