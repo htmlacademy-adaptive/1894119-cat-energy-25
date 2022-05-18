@@ -43,6 +43,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+.special__icon--leaf::before {
+  background-image: url(../img/icon-leaf.svg);
+  width: 31px;
+  height: 32px;
+}
+
+.special__icon--tub::before {
+  background-image: url(../img/icon-tub.svg);
+  width: 30px;
+  height: 31px;
+}
+
+.special__icon--eat::before {
+  background-image: url(../img/icon-eat.svg);
+  width: 26px;
+  height: 30px;
+}
+
+.special__icon--alarm::before {
+  background-image: url(../img/icon-alarm.svg);
+  width: 33px;
+  height: 33px;
 }
 
 .special__number {
