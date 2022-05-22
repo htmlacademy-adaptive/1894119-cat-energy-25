@@ -1,0 +1,128 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  height: 232px;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.slider__item {
+  position: absolute;
+  overflow: hidden;
+  transition: width 0.5s ease-out;
+  width: 0;
+
+  &--after {
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+  }
+}
+
+.slider__item--active {
+  width: 100%;
+}
+
+.slider__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 21px;
+  z-index: 1;
+}
+
+.slider__button {
+  font-family: "OswaldRegular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.slider__toggler {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  width: 85px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #68b738;
+    cursor: pointer;
+  }
+}
+
+.slider__toggler--active {
+  justify-content: end;
+}
+
+.slider__scrollbar {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    width: 592px;
+    height: 511px;
+    display: flex;
+  }
+
+  .slider__item {
+    width: 100%;
+    position: static;
+  }
+
+  .slider__image--before {
+    width: 655px;
+    height: 511px;
+  }
+
+  .slider__image--after {
+    width: 537px;
+    height: 511px;
+  }
+
+  .slider__actions {
+    margin-top: 30px;
+  }
+
+  .slider__button {
+    min-width: 70px;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider__toggler {
+    display: none;
+  }
+
+  .slider__scrollbar {
+    display: block;
+  }
+}

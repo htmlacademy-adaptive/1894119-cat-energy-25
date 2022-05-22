@@ -17,6 +17,10 @@
   display: block;
 }
 
+.main-nav__logo-text--position {
+  padding-top: 8px;
+}
+
 .main-nav__toggle {
   border: none;
   padding: 0;
@@ -200,12 +204,16 @@
   .main-nav {
     font-size: 20px;
     line-height: 30px;
-    padding: 53px 110px 32px 110px;
+    padding: 53px 110px 30px 110px;
     grid-template-columns: 1fr auto;
   }
 
   .main-nav__list {
     background-color: transparent;
+  }
+
+  .main-nav__item {
+    padding-top: 10px;
   }
 
   .main-nav__item--main-page .main-nav__link {
