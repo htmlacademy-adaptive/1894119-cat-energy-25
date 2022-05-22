@@ -29,6 +29,13 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+const sliderStyles = () => {
+  return gulp.src('source/nouislider/nouislider.css')
+    .pipe(postcss([csso()]))
+    .pipe(rename('nouislider.min.css'))
+    .pipe(gulp.dest('build/nouislider'));
+}
+
 // HTML
 
 const html = () => {
@@ -91,7 +98,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/fav.ico/*.{png,xml,ico,json}'
+    'source/fav.ico/*.{png,xml,ico,json}',
+    'source/nouislider/*js'
   ], {
     base: 'source'
   })
@@ -129,6 +137,7 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
+  gulp.watch('source/nouislider/nouislider.css', gulp.series(sliderStyles))
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
@@ -142,6 +151,7 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    sliderStyles,
     html,
     scripts,
     svg,
@@ -158,6 +168,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    sliderStyles,
     html,
     scripts,
     svg,
