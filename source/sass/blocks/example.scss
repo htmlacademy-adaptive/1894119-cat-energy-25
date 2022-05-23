@@ -161,7 +161,7 @@
     display: grid;
     grid-template-columns: 436px 1fr;
     grid-template-rows: 176px auto auto auto;
-    column-gap: 180px;
+    column-gap: 184px;
     padding-left: 110px;
     padding-right: 110px;
     padding-top: 0;
@@ -182,11 +182,11 @@
   }
 
   .example__text {
-    font-size: 13px;
+    font-size: 16px;
     grid-column: 1/2;
     grid-row: 2/3;
     padding-top: 74px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     padding-right: 0;
     margin-bottom: 0;
   }
@@ -197,7 +197,7 @@
     margin: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    row-gap: 43px;
+    row-gap: 40px;
     width: fit-content;
   }
 
@@ -215,6 +215,7 @@
 
   .example__definition {
     background-color: #eaeaea;
+    transform: translateY(-9px);
   }
 
   .example__note {
@@ -222,11 +223,11 @@
     grid-row: 2/3;
     text-align: left;
     margin-top: 0;
-    font-size: 18px;
+    padding-left: 3px;
 
     span {
       display: inline;
-      margin-left: 53px;
+      margin-left: 63px;
     }
   }
 

@@ -133,7 +133,15 @@
   }
 
   .special__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr auto;
     column-gap: 79px;
+  }
+
+  .special__item:last-of-type {
+    transform: translateX(5px);
+  }
+
+  .special__item:nth-last-of-type(2) {
+    transform: translateX(3px);
   }
 }
