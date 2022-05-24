@@ -19,7 +19,7 @@
 }
 
 .comment__title {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -38,7 +38,7 @@
   resize: none;
   border: 1px solid #e7e7e7;
   padding: 8px 13px 8px 13px;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   box-sizing: border-box;
 }
 
@@ -91,6 +91,8 @@
   .comment__wrapper {
     padding-left: 110px;
     padding-right: 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .comment__title {

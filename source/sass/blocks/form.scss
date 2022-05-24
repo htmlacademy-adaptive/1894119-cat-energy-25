@@ -3,7 +3,7 @@
 }
 
 .form__text {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -86,11 +86,16 @@
   .form__text {
     padding-left: 110px;
     padding-right: 110px;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form__note {
     padding-left: 110px;
     padding-right: 110px;
+    width: 1220px;
+    margin: 0 auto;
 
     p {
       margin: 0;

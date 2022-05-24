@@ -98,6 +98,17 @@
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+.noUi-horizontal .noUi-handle:active {
+  border-color: rgba(104, 183, 56, 1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {

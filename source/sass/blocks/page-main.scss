@@ -1,9 +1,10 @@
 .page-main {
   flex-grow: 1;
+  width: 100%;
 }
 
 .page-main__title {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -17,7 +18,7 @@
 }
 
 .page-main__title--form {
-  padding: 30px 20px 37px 20px;
+  padding: 30px 20px 36px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,6 +38,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .page-main__title--catalog {
     padding: 46px 110px 165px 110px;
   }

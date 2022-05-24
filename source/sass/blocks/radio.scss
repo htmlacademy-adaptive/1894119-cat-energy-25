@@ -6,13 +6,17 @@
     border: 1px solid #bababa;
   }
 
-  &:active {
+  &:active .radio__mark {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
     opacity: 0.3;
   }
 }
 
-.radio__input {
-  display: none;
+.radio__input:focus + .radio__mark {
+  border: 1px solid #68b738;
 }
 
 .radio__mark {

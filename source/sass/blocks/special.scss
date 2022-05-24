@@ -5,7 +5,7 @@
 }
 
 .special__title {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -117,7 +117,7 @@
   .special__number {
     position: absolute;
     display: block;
-    font-family: "OswaldRegular", sans-serif;
+    font-family: "OswaldRegular", "Arial", sans-serif;
     font-size: 280px;
     line-height: 289px;
     color: #f2f2f2;
@@ -130,6 +130,8 @@
   .special {
     padding: 0 110px 83px 110px;
     border-bottom: none;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .special__list {

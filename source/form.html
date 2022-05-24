@@ -28,23 +28,23 @@
   <body class="page-body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-          <div class="main-nav__logo logo">
-            <a class="logo__link" href="index.html">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина 'Кэт энерджи'">
-              </picture>
-            </a>
+        <div class="main-nav__logo logo">
+          <a class="logo__link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина 'Кэт энерджи'">
+            </picture>
+          </a>
 
-            <a class="main-nav__logo-text main-nav__logo-text--position" href="index.html">
-              <img src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина 'Кэт энерджи'">
-            </a>
-          </div>
+          <a class="main-nav__logo-text main-nav__logo-text--position" href="index.html">
+            <img src="img/logo-text.svg" width="101" height="18" alt="Логотип интернет-магазина 'Кэт энерджи'">
+          </a>
+        </div>
 
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -93,7 +93,7 @@
             <ul class="filter__list">
               <li class="filter__item radio">
                 <label class="radio__label" for="weight-loss">
-                  <input class="radio__input" type="radio" id="weight-loss" name="radio" checked>
+                  <input class="radio__input visually-hidden" type="radio" id="weight-loss" name="radio" value="weight-loss" checked>
                   <span class="radio__mark"></span>
                   <span class="radio__name">Похудение</span>
                 </label>
@@ -101,7 +101,7 @@
 
               <li class="filter__item radio">
                 <label class="radio__label" for="weight-gain">
-                  <input class="radio__input" type="radio" id="weight-gain" name="radio">
+                  <input class="radio__input visually-hidden" type="radio" id="weight-gain" name="radio" value="weight-gain">
                   <span class="radio__mark"></span>
                   <span class="radio__name">Набор массы</span>
                 </label>
@@ -109,7 +109,7 @@
 
               <li class="filter__item radio">
                 <label class="radio__label" for="dont-know">
-                  <input class="radio__input" type="radio" id="dont-know" name="radio">
+                  <input class="radio__input visually-hidden" type="radio" id="dont-know" name="radio" value="dont-know">
                   <span class="radio__mark"></span>
                   <span class="radio__name">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -119,8 +119,8 @@
         </fieldset>
 
         <fieldset class="form__group contacts-details">
-          <h2 class="contacts-details__title">Контактные данные<br>(владельца кота)</h2>
           <div class="contacts-details__wrapper">
+            <h2 class="contacts-details__title">Контактные данные<br>(владельца кота)</h2>
             <ul class="contacts-details__list">
               <li class="contacts-details__item">
                 <label class="contacts-details__label" for="email">E-mail:*</label>
@@ -154,7 +154,7 @@
             <ul class="additionally__list">
               <li class="additionally__item checkbox">
                 <label class="checkbox__label" for="sweetener">
-                  <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__name">сахарозаменитель</span>
                 </label>
@@ -162,7 +162,7 @@
 
               <li class="additionally__item checkbox">
                 <label class="checkbox__label" for="water">
-                  <input class="checkbox__input" type="checkbox" name="water" id="water">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="water" id="water">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__name">питьевая вода</span>
                 </label>
@@ -170,7 +170,7 @@
 
               <li class="additionally__item checkbox">
                 <label class="checkbox__label" for="milk">
-                  <input class="checkbox__input" type="checkbox" name="milk" id="milk">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="milk" id="milk">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__name">молоко</span>
                 </label>
@@ -178,7 +178,7 @@
 
               <li class="additionally__item checkbox">
                 <label class="checkbox__label" for="vitamins">
-                  <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__name">витамины</span>
                 </label>
@@ -194,11 +194,13 @@
       </form>
 
       <section class="contacts">
-        <div class="contacts__wrapper contacts__wrapper--background">
-          <h3 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
-          <p class="contacts__text">ул. Большая
-                                    Конюшенная, д. 19/8
-                                    <span>Санкт-Петербург</span></p>
+        <div class="contacts__wrapper">
+          <div>
+            <h3 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
+            <p class="contacts__text">ул. Большая
+                                      Конюшенная, д. 19/8
+                                      <span>Санкт-Петербург</span></p>
+          </div>
         </div>
 
         <iframe class="contacts__map"

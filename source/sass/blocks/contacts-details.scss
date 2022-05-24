@@ -19,7 +19,7 @@
 }
 
 .contacts-details__title {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -39,7 +39,7 @@
 
 .contacts-details__item {
   list-style-type: none;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -63,7 +63,7 @@
 .contacts-details__input {
   border: 1px solid #e7e7e7;
   padding: 12px 15px 13px 15px;
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -173,13 +173,15 @@
   .contacts-details__wrapper {
     padding-left: 110px;
     padding-right: 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .contacts-details__title {
     padding-top: 69px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-left: 70px;
+    margin-left: -40px;
   }
 
   .contacts-details__list {
