@@ -1,4 +1,4 @@
-.contacts__wrapper {
+.contacts__wrapper div {
   padding: 27px 21px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -9,7 +9,7 @@
 }
 
 .contacts__title {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -39,7 +39,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__wrapper {
+  .contacts__wrapper div{
     padding: 61px 70px 58px 70px;
     grid-template-columns: 172px 1fr;
     column-gap: 296px;
@@ -73,11 +73,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
+  .contacts__wrapper {
+    width: 1440px;
+    margin: 0 auto;
     position: relative;
   }
 
-  .contacts__wrapper {
+  .contacts__wrapper div{
     padding-left: 80px;
     padding-right: 80px;
     grid-template-columns: 163px 155px;

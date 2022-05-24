@@ -5,13 +5,14 @@
 }
 
 .good__title {
-  font-family: "OswaldRegular", sans-serif;
+  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 14px;
+  margin-left: 2px;
   color: #222222;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -60,6 +61,7 @@
     grid-column: 1/2;
     grid-row: 1/2;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .good__amount {
@@ -68,6 +70,10 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 5px;
+
+    &--position {
+      transform: translateX(-9px);
+    }
   }
 
   .good__price {
@@ -79,7 +85,7 @@
   }
 
   .good__button {
-    margin-top: 20px;
+    margin-top: 21px;
     grid-column: 1/-1;
     grid-row: 2/3;
   }
@@ -100,6 +106,10 @@
   .good__amount {
     grid-column: 2/3;
     grid-row: 1/2;
+
+    &--position {
+      transform: none;
+    }
   }
 
   .good__price {

@@ -6,13 +6,17 @@
     border: 1px solid #bababa;
   }
 
-  &:active {
+  &:active .checkbox__mark {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
     opacity: 0.3;
   }
 }
 
-.checkbox__input {
-  display: none;
+.checkbox__input:focus ~ .checkbox__mark {
+  border: 1px solid #68b738;
 }
 
 .checkbox__mark {
