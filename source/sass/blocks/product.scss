@@ -22,15 +22,16 @@
 }
 
 .product__image--small-size-buckwheat {
-  bottom: 76px;
+  bottom: 77px;
 }
 
 .product__image--small-size-rice {
-  bottom: 74px;
+  bottom: 78px;
+  left: 54px;
 }
 
 .product__image--big-size {
-  bottom: 72px;
+  bottom: 73px;
   left: 48px;
 }
 
@@ -57,8 +58,14 @@
   margin-left: -2px;
 }
 
+.product__row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__cell {
   padding: 0;
+  display: block;
 }
 
 .product__cell--right-column {
@@ -70,7 +77,7 @@
   line-height: 20px;
   padding: 10px 0;
   width: 100%;
-  margin-top: 18px;
+  margin-top: 22px;
   grid-column: 1/3;
   grid-row: 3/4;
   text-decoration: none;
